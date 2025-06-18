@@ -36,9 +36,9 @@
   <script>
     const texts = ['🌟', '🎉', '💻', '❤️', '🔥', '✨', 'HTML', 'CSS', 'JS'];
     const images = [
-      'https://via.placeholder.com/40', // ảnh mẫu, có thể thay link khác
-      'https://via.placeholder.com/40/ff0000',
-      'https://via.placeholder.com/40/00ff00'
+      'images/image-1.jpg', // ảnh mẫu, có thể thay link khác
+      'images/image-2.jpg',
+      'images/image-3.jpg'
     ];
 
     function createFallingElement() {
@@ -52,8 +52,6 @@
         el.innerText = texts[Math.floor(Math.random() * texts.length)];
       } else {
         el.src = images[Math.floor(Math.random() * images.length)];
-        el.style.width = '40px';
-        el.style.height = '40px';
       }
 
       document.body.appendChild(el);
